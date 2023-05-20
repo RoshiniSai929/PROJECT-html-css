@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./style.css" rel="stylesheet">
+     
+    </head>
+    <body style="background-color: rgb(245, 245, 245);">
+        <header>
+            <nav><a href="#Books">Books</a>
+                <a href="#Register">Register</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Logout</a>
+                <h3 class="liblogo">Library System</h3>
+            </nav>
+           
+        </header>
+        <main>
+            <section id="Books" class="section ">
+                <div>
+                <h4 class="div-first">Books</h4>
+                <table class="div-first">
+                    <thead>
+                  <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td ><span class="title"> Life of Pie</span><table class="undertr">
+                      <tr  ><td>Publication Date: 2001</td></tr>
+                      <tr><td>Page Count:250</td></tr>
+                      <tr><td>ISBN :123-4567890123</td></tr>
+                    </table>
+                    </td>
+                    
+                    <td>Yann Martel</td>
+                    <td>Adventure </td>
+                    <td>Available</td>
+                  </tr>
+                  <tr><td>2</td>
+                    <td ><span class="title">Stephen King</span><table class="undertr">
+                        
+                        <tr><td>Publication Date: 1974</td></tr>
+                        <tr><td>Page Count:250</td></tr>
+                        <tr><td>ISBN :123-4567890123</td></tr>
+                      </table>
+                      </td>
+                    <td>Carrie</td>
+                    <td>Horror</td>
+                    <td>Available</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td ><span class="title">The Queen of Hearts</span><table class="undertr">
+                        <tr><td>Publication Date: 2018</td></tr>
+                        <tr><td>Page Count:250</td></tr>
+                        <tr><td>ISBN :123-4567890123</td></tr>
+                      </table>
+                      </td>
+                    <td>Kimmery Martin</td>
+                    <td>Womens Fiction</td>
+                    <td>Available</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td ><span class="title">CIRCE</span><table class="undertr">
+                        <tr><td>Publication Date: 2000</td></tr>
+                        <tr><td>Page Count:250</td></tr>
+                        <tr><td>ISBN :123-4567890123</td></tr>
+                      </table>
+                      </td>
+                    <td> Madeline Miller</td>
+                    <td>Fantasy</td>
+                    <td>Available</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td ><span class="title">Adventures of Sherlock Holmes </span><table class="undertr">
+                        <tr><td>Publication Date: 2017</td></tr>
+                        <tr><td>Page Count:250</td></tr>
+                        <tr><td>ISBN :123-4567890123</td></tr>
+                      </table>
+                      </td>
+                    <td>Conan Doyle</td>
+                    <td>Detective and Mystery</td>
+                    <td>Available</td>
+                  </tr>
+                </tbody>
+                </table>
+                </div>
+            </section>
+            <section id="Register" class="section ">
+                <div class="regi">
+                  
+                <h3 class="regiterheading" >Register</h3>
+                <form>
+                <label for="name">Name:</label><br>
+                 <input type="text" name="name"  id="name" required placeholder="enter your first name" size="100"><br>
+                 <label for="lname">Last Name:</label><br>
+                 <input type="text" name="lname" id="lname" required placeholder="enter your last name" size="100"><br>
+      
+                 <label for="DOB">Date of Birth:</label><br>
+                 <input type="date" name="dob" id="DOB" required><br>
+                 <label for="age">Age:</label><br>
+                 <input type="number" name="age" id="age"min ="5" max="100" required ><br>
+                 <label for="email">Email:</label><br>
+                 <input type="email" name="email" id="email" size="100"required placeholder="xyz@gmail.com" ><br>
+                 <label for="password">Password:</label><br>
+                 <input type="password" name="name" id="password" size="100" required><br>
+                 <label for="comp">Confirm Password:</label><br>
+                 <input type="password" name="cpassword" id="comp" required size="100" pattern="^.{6,}$"
+                       onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Passwords do not match.' : '');"><br>
+                <span class="error-message" id="error_msg"></span><br>
+                 <input type="submit" value="Register" >
+                </form>
+                </div>
+            </section>
+        </main>
+    </body>
+       </html>
